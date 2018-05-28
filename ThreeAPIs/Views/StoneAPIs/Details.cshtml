@@ -1,0 +1,78 @@
+﻿@model ThreeAPIs.Models.StoneAPI
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StoneAPI</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MerchantKey)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MerchantKey)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardTransactionCollectionAmountCents)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardTransactionCollectionAmountCents)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardTransactionCollectionCreditCardCreditCardBrand)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardTransactionCollectionCreditCardCreditCardBrand)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardTransactionCollectionCreditCardCreditCardNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardTransactionCollectionCreditCardCreditCardNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardTransactionCollectionCreditCardExpMonth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardTransactionCollectionCreditCardExpMonth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardTransactionCollectionCreditCardExpYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardTransactionCollectionCreditCardExpYear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardTransactionCollectionCreditCardSecurityCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardTransactionCollectionCreditCardSecurityCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardTransactionCollectionCreditCardHolderName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardTransactionCollectionCreditCardHolderName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardTransactionCollectionCreditCardInstallmentCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardTransactionCollectionCreditCardInstallmentCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderOrderReference)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OrderOrderReference)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

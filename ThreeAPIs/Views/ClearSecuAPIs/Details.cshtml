@@ -1,0 +1,36 @@
+﻿@model ThreeAPIs.Models.ClearSecuAPI
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ClearSecuAPI</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApiKey)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApiKey)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LoginToken)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LoginToken)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnalysisLocation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnalysisLocation)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

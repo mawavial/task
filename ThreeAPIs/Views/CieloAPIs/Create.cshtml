@@ -1,0 +1,98 @@
+﻿@model ThreeAPIs.Models.CieloAPI
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>CieloAPI</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="control-label"></label>
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MerchantKey" class="control-label"></label>
+                <input asp-for="MerchantKey" class="form-control" />
+                <span asp-validation-for="MerchantKey" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditCardTransactionCollectionAmountCents" class="control-label"></label>
+                <input asp-for="CreditCardTransactionCollectionAmountCents" class="form-control" />
+                <span asp-validation-for="CreditCardTransactionCollectionAmountCents" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditCardTransactionCollectionCreditCardCreditCardBrand" class="control-label"></label>
+                <input asp-for="CreditCardTransactionCollectionCreditCardCreditCardBrand" class="form-control" />
+                <span asp-validation-for="CreditCardTransactionCollectionCreditCardCreditCardBrand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditCardTransactionCollectionCreditCardCreditCardNumber" class="control-label"></label>
+                <input asp-for="CreditCardTransactionCollectionCreditCardCreditCardNumber" class="form-control" />
+                <span asp-validation-for="CreditCardTransactionCollectionCreditCardCreditCardNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditCardTransactionCollectionCreditCardExpMonth" class="control-label"></label>
+                <input asp-for="CreditCardTransactionCollectionCreditCardExpMonth" class="form-control" />
+                <span asp-validation-for="CreditCardTransactionCollectionCreditCardExpMonth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditCardTransactionCollectionCreditCardExpYear" class="control-label"></label>
+                <input asp-for="CreditCardTransactionCollectionCreditCardExpYear" class="form-control" />
+                <span asp-validation-for="CreditCardTransactionCollectionCreditCardExpYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditCardTransactionCollectionCreditCardSecurityCode" class="control-label"></label>
+                <input asp-for="CreditCardTransactionCollectionCreditCardSecurityCode" class="form-control" />
+                <span asp-validation-for="CreditCardTransactionCollectionCreditCardSecurityCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditCardTransactionCollectionCreditCardHolderName" class="control-label"></label>
+                <input asp-for="CreditCardTransactionCollectionCreditCardHolderName" class="form-control" />
+                <span asp-validation-for="CreditCardTransactionCollectionCreditCardHolderName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreditCardTransactionCollectionCreditCardInstallmentCount" class="control-label"></label>
+                <input asp-for="CreditCardTransactionCollectionCreditCardInstallmentCount" class="form-control" />
+                <span asp-validation-for="CreditCardTransactionCollectionCreditCardInstallmentCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderOrderReference" class="control-label"></label>
+                <input asp-for="OrderOrderReference" class="form-control" />
+                <span asp-validation-for="OrderOrderReference" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
